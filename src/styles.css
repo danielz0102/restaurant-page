@@ -1,0 +1,59 @@
+:root {
+  --text-color: #393E41;
+  --emphasis-color: #E94F37;
+  --background-color: #F6F7EB;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button, input {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/*HEADER*/
+header {
+  padding: 32px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--emphasis-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--emphasis-color);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+}
+
