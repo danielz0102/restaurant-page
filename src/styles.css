@@ -10,7 +10,8 @@
   box-sizing: border-box;
 }
 
-button, input {
+button,
+input {
   font: inherit;
 }
 
@@ -22,9 +23,11 @@ body {
 }
 
 /*HEADER*/
+
 header {
   padding: 32px;
 }
+
 nav {
   display: flex;
   justify-content: center;
@@ -32,10 +35,11 @@ nav {
 }
 
 .link {
+  --link-color: var(--text-color);
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--emphasis-color);
+  color: var(--link-color);
   font-weight: 600;
   font-size: 1.5rem;
   position: relative;
@@ -48,12 +52,46 @@ nav {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: var(--emphasis-color);
+  background-color: var(--link-color);
   transform: scaleX(0);
   transition: transform 0.3s;
+}
+
+.link.active,
+.link.active::before {
+  --link-color: var(--emphasis-color);
 }
 
 .link:hover::before {
   transform: scaleX(1);
 }
 
+/*HOME*/
+
+h1 {
+  color: var(--emphasis-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main p {
+  width: 750px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+main img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+}
