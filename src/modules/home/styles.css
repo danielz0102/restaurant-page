@@ -1,0 +1,27 @@
+h1 {
+  color: var(--emphasis-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main p {
+  width: 750px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+main img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+}

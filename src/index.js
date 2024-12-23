@@ -1,3 +1,4 @@
-import './styles.css';
+import './styles.css'
+import { initPage } from './modules/home/home'
 
-console.log('Hello, world!');
+initPage()
