@@ -9,7 +9,7 @@ const loadFunctions = {
   about: showAbout
 }
 
-initPage()
+showMenu()
 
 document.querySelectorAll('.link').forEach(link => {
   link.addEventListener('click', e => {
