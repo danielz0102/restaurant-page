@@ -1,17 +1,17 @@
 import './styles.css'
-import { initPage } from './modules/home/home.js'
+import { showHome } from './modules/home/home.js'
 import { showMenu } from './modules/menu/menu.js'
 import { showAbout } from './modules/about/about.js'
 
 const loadFunctions = {
-  home: initPage,
+  home: showHome,
   menu: showMenu,
   about: showAbout
 }
 
-showMenu()
+showHome()
 
-document.querySelectorAll('.link').forEach(link => {
+document.querySelectorAll('.link').forEach((link, i, arr) => {
   link.addEventListener('click', e => {
     const page = e.target.textContent.toLowerCase()
     document.querySelector('#content').innerHTML = ''

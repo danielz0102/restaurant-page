@@ -1,8 +1,9 @@
 import './styles.css'
 import landingImg from './landing-img.jpg'
 
-export function initPage() {
+export function showHome() {
   const main = document.createElement('main')
+  main.id = 'home'
   
   const h1 = document.createElement('h1')
   h1.textContent = 'Lumio'

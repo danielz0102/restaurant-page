@@ -24,6 +24,7 @@ li:not(:last-child) {
   background-color: #faebd7;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 32px;
   padding-block: 32px;
 }

@@ -2,19 +2,18 @@ h1 {
   color: var(--emphasis-color);
 }
 
-main {
+#home {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-main h1 {
+#home h1 {
   font-size: 3rem;
   font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
 }
 
-main p {
+#home p {
   width: 750px;
   line-height: 1.5;
   color: var(--text-color);
@@ -37,7 +36,7 @@ a:hover {
   text-decoration: none;
 }
 
-main img {
+#home img {
   width: 400px;
   height: 400px;
   object-fit: cover;
