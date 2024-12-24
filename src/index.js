@@ -14,7 +14,10 @@ showHome()
 document.querySelectorAll('.link').forEach((link, i, arr) => {
   link.addEventListener('click', e => {
     const page = e.target.textContent.toLowerCase()
-    document.querySelector('#content').innerHTML = ''
+    document.querySelector('#content').replaceChildren()
     loadFunctions[page]()
+
+    arr.forEach(link => link.classList.remove('active'))
+    e.target.classList.add('active')
   })
 })

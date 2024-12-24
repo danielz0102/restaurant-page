@@ -43,6 +43,7 @@ nav {
   font-weight: 600;
   font-size: 1.5rem;
   position: relative;
+  transition: color 0.2s;
 }
 
 .link::before {
@@ -54,7 +55,7 @@ nav {
   left: 0;
   background-color: var(--link-color);
   transform: scaleX(0);
-  transition: transform 0.3s;
+  transition: transform 0.3s, background-color 0.2s;
 }
 
 .link.active,
