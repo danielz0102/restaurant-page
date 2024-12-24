@@ -18,8 +18,13 @@ input {
 body {
   min-height: 100vh;
   background-color: var(--background-color);
+  color: var(--text-color);
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+}
+
+h1, h2 {
+  color: var(--emphasis-color);
 }
 
 /*HEADER*/
@@ -63,6 +68,6 @@ nav {
   --link-color: var(--emphasis-color);
 }
 
-.link:hover::before {
+.link.active::before, .link:hover::before {
   transform: scaleX(1);
 }

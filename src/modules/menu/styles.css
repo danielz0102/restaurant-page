@@ -1,10 +1,8 @@
 h2 {
-  color: var(--emphasis-color);
   margin-top: 0;
 }
 
 ul {
-  color: var(--text-color);
   list-style-type: none;
   padding: 0;
   margin: 0;

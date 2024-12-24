@@ -1,0 +1,24 @@
+#about {
+  width: 1000px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.brand {
+  font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+  color: var(--emphasis-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#about h1, h2 {
+  text-align: center;
+}
+
+#about h2 {
+  color: var(--text-color);
+}
+
+address {
+  text-align: center;
+}
