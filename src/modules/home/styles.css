@@ -20,9 +20,26 @@ main p {
   color: var(--text-color);
 }
 
+.credit {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+a:link {
+  color: var(--emphasis-color);
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 main img {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   object-fit: cover;
   border-radius: 50%;
 }
