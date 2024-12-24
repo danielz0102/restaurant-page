@@ -11,6 +11,7 @@ main {
 
 main h1 {
   font-size: 3rem;
+  font-family: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
 }
 
 main p {
